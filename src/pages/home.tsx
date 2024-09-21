@@ -23,7 +23,7 @@ const Home=()=>{
     return(
         <>
 
-        <div className="  flex font-rubik  justify-evenly items-center p-[3rem] text-2xl">
+        <div className=" flex font-rubik  justify-evenly items-center p-[3rem] text-2xl">
             <button >HOME</button>
             <button >ABOUT</button>
             <button>PROJECTS</button>
