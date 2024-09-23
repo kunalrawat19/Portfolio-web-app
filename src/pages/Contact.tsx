@@ -11,19 +11,15 @@ const Contact=()=>{
     const socialMediaData=[{
         name:"Twitter",
         logo:<FaXTwitter/>,
-        link:"https://x.com/Tuli2Tuli"
+        link:"https://x.com/KunalRa07763972"
     },{
         name:"LinkedIn",
         logo:<FaLinkedin/>,
-        link:""
+        link:"https://www.linkedin.com/in/kunal-rawat-56b00322a/"
     },{
         name:"Github",
         logo:<FaGithub/>,
-        link:"https://github.com/Devesh0403"
-    },{
-        name:"Medium",
-        logo:<FaMediumM/>,
-        link:"https://medium.com/@deveshtuli02"
+        link:"https://github.com/kunalrawat19"
     }]
     return(
         <div className="bg-contact h-screen">
@@ -40,7 +36,7 @@ const Contact=()=>{
     
     {socialMediaData.map((socialMedia, index) => (
         <div key={index} className="w-[150px] h-[150px] md:w-[200px] md:h-[200px] p-[4px] transition-transform duration-300 transform hover:scale-110 border border-transparent hover:border-black rounded-xl flex items-center justify-center">
-    <a href={socialMedia.link} className="flex items-center justify-center text-8xl md:text-9xl">
+    <a href={socialMedia.link} target="blank" className="flex items-center justify-center text-8xl md:text-9xl">
       {socialMedia.logo}
     </a>
   </div>
@@ -53,10 +49,10 @@ const Contact=()=>{
 
         </div>
         <div className="font-bold text-xl flex justify-center items-center gap-2 mt-8">
-  <a href="mailto:deveshtuli02@gmail.com" className="flex items-center bg-gradient-to-r from-black to-black bg-[length:0%_4px] bg-left-bottom 
+  <a href="mailto:deveshtuli02@gmail.com"  className="flex items-center bg-gradient-to-r from-black to-black bg-[length:0%_4px] bg-left-bottom 
   hover:bg-[length:100%_4px] transition-all duration-300 ease-out bg-no-repeat ">
     <MdEmail className="mr-2 text-2xl" />
-    deveshtuli02@gmail.com
+    kunalrawat693@gmail.com
   </a>
 </div>
       </div>

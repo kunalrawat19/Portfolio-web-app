@@ -48,20 +48,20 @@ const Home=()=>{
             <div className=" flex md:flex-row flex-col-reverse   m-auto  justify-center gap-[3rem] items-center w-screen h-[75vh]   bg-home     ">
                 <div className="text-center mr-[1rem]">
                 <h2 className=" font-rubik text-xl">Hey! I'm</h2>
-                <h1 className="font-rubik text-5xl md:text-7xl"> Devesh</h1>
+                <h1 className="font-rubik text-5xl md:text-7xl"> Kunal</h1>
                 <h2 className="font-doodle text-2xl   ">Full Stack Developer</h2>
                 
 
             </div>
 
             <div className="">
-                <img src="src/assets/photo.jpeg" alt="your"  className=" rounded-2xl w-[300px] h-[300px] border"/>
+                <img src="src/assets/photo.jpg" alt="your"  className=" rounded-2xl w-[300px] h-[300px] border"/>
                 <div className="mt-[2rem] flex flex-row justify-center gap-[2rem] text-4xl">
 
-                <a href=""><FaLinkedin/></a>
-                <a href="https://github.com/Devesh0403"><FaGithub/></a>
-                <a href="https://x.com/Tuli2Tuli"><FaXTwitter/></a>
-                <a href="https://medium.com/@deveshtuli02"><FaMediumM/></a>
+                <a href="https://www.linkedin.com/in/kunal-rawat-56b00322a/" target="blank"><FaLinkedin/></a>
+                <a href="https://github.com/kunalrawat19" target="blank"><FaGithub/></a>
+                <a href="https://x.com/KunalRa07763972" target="blank"><FaXTwitter/></a>
+                {/* <a href="https://medium.com/@deveshtuli02"><FaMediumM/></a> */}
                 </div>
 
 
