@@ -3,9 +3,13 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 import { FaMediumM } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
-import mainImage from "my-project/src/assets/photo.jpeg"
+import Skills from "../components/Skills"
+import { IoIosUndo } from "react-icons/io";
+
+
 
 import "../pages/home.css"
+
 
 
  
@@ -15,36 +19,46 @@ const Home=()=>{
 
     function changePage(newPage){
         setPage(newPage);
+
+
     }
+    const Services=[{
+        title:"I focus heavily on UI/UX. I like to create visually appealing web apps that aligns with the brand goals and strategies",
+        svg:"src/assets/design.png",
+        
+    },{
+        title:"I can help improve your engagement, through web apps that blend functionality with aesthetic appeal.",
+        svg:'src/assets/social-media.png',
+        
+    }]
     
 
 
 
     return(
-        <>
+        <div className="bg-about">
+            <a href="/"><div className="text-5xl inline-block m-[2rem] "><IoIosUndo/></div></a>
 
-        <div className=" flex font-rubik  justify-evenly items-center p-[3rem] text-2xl">
-            <button >HOME</button>
-            <button >ABOUT</button>
-            <button>PROJECTS</button>
-            
+        
 
 
-        </div>
-         
-        <div className=" flex md:flex-row flex-col-reverse  m-auto justify-around items-center w-[80%] h-[60vh] mt-[1rem]  bg-light-blue  border border-yellow-200 shadow-2xl rounded-2xl   ">
-            <div className="text-center mr-[1rem]">
+        
+        <div className="flex flex-col  ">
+
+            <div className=" flex md:flex-row flex-col-reverse   m-auto  justify-center gap-[3rem] items-center w-screen h-[75vh]   bg-home     ">
+                <div className="text-center mr-[1rem]">
                 <h2 className=" font-rubik text-xl">Hey! I'm</h2>
                 <h1 className="font-rubik text-5xl md:text-7xl"> Devesh</h1>
-                <h2 className="font-doodle text-2xl typing-animation  ">Full Stack Developer</h2>
+                <h2 className="font-doodle text-2xl   ">Full Stack Developer</h2>
+                
 
             </div>
 
             <div className="">
-                <img src="" alt="your"  className=" w-[250px] h-[250px] border"/>
-                <div className="mt-[1rem] flex flex-row justify-center gap-[2rem] text-2xl">
+                <img src="src/assets/photo.jpeg" alt="your"  className=" rounded-2xl w-[300px] h-[300px] border"/>
+                <div className="mt-[2rem] flex flex-row justify-center gap-[2rem] text-4xl">
 
-                {/* <a href=""><FaLinkedin/></a> */}
+                <a href=""><FaLinkedin/></a>
                 <a href="https://github.com/Devesh0403"><FaGithub/></a>
                 <a href="https://x.com/Tuli2Tuli"><FaXTwitter/></a>
                 <a href="https://medium.com/@deveshtuli02"><FaMediumM/></a>
@@ -53,20 +67,31 @@ const Home=()=>{
 
 
             </div>
+            
+            
 
         </div>
 
+        <div>
+</div>
+
+
+        <Skills/>
+   <div className="flex flex-col w-[60%] gap-[5rem] m-auto mt-[5rem]">
+
+  {Services.map((service, index) => {
+      return (
+          <div key={index} className=" flex flex-col md:flex-row gap-[3rem] items-center font-bold font-rubik">
         
-
-
-
-
-
-        </>
-
+          <img src={service.svg} className="h-[200px] w-[200px] " alt="" />
+        <h1 className="font-bold text-center">{service.title}</h1>
         
-    
-        
+      </div>
+    );
+})}
+</div>
+        </div>    
+        </div>
     )
 
 }

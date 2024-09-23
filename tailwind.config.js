@@ -9,10 +9,9 @@ export default {
         "doodle":["Rubik Doodle Shadow", "system-ui"]
     },
     colors:{
-      "yellow":"#EAD8B1",
-      "light-blue":"#6A9AB0",
-      "med-blue":"#3A6D8C",
-      "dark-blue":"#001F3F"
+      "about":"#A8D0E6",
+      "projects":"#24305E",
+      "contact":"#F76C6C"
     }
     },
   },
