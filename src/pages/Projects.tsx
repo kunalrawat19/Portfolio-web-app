@@ -14,7 +14,7 @@ import { IoIosUndo } from "react-icons/io";
 
 const projectsData=[{
     title:"Legal Bharat",
-    image:"src/assets/legal-bharat.jpeg",
+    image:"https://res.cloudinary.com/ddsqjzrow/image/upload/v1727120228/legal-bharat_rrw5iy.jpg",
     desc:"Legal Bharat is a comprehensive web application designed to provide easy access to legal services and resources across India. The platform aims to bridge the gap between legal professionals and individuals seeking legal assistance.",
     skills:[{
         name:"React",
