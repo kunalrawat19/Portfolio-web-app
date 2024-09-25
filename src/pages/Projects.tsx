@@ -11,6 +11,7 @@ import { FaHtml5 } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { IoIosUndo } from "react-icons/io";
+import Skills from '../components/Skills';
 
 const projectsData=[{
     title:"Legal Bharat",
@@ -39,7 +40,7 @@ const projectsData=[{
     }]
 },{
     title:"Chill Club",
-    image:"https://res.cloudinary.com/ddsqjzrow/image/upload/v1727120228/chill-club_m2xlji.jpg",
+    image:"https://res.cloudinary.com/ddsqjzrow/image/upload/v1727244440/image_6_nqllwu.png",
     desc:"Chill Club is a Pomodoro-based productivity app designed to help users manage their time efficiently while maintaining a sense of relaxation and balance.",
     skills:[{
         name:"Tailwind",
@@ -58,26 +59,52 @@ const projectsData=[{
         name:"HTML",
         svg:<FaHtml5/>
     }
+]},
+    {
+    title:"Study Notion",
+    image:"https://res.cloudinary.com/ddsqjzrow/image/upload/v1727244285/image_5_k1fofr.png",
+    desc:"Developed StudyNotion, an EdTech platform with secure user authentication, course browsing, and transactions via Razorpay. Utilized MongoDB, Cloudinary, Redux, and React.js for efficient data management and a responsive user interface.",
+    skills:[
+        {
+            name:"Tailwind",
+            svg:<RiTailwindCssFill/>
+        },
+        {
+            name:"React",
+            svg:<FaReact/>
+        },
+        {
+            name:"MongoDB",
+            svg:<SiMongodb/>
+        },
+        {
+            name:"NodeJs",
+            svg:<RiNodejsLine/>
+        },
+        {
+            name:"JavaScript",
+            svg:<IoLogoJavascript/>
+        }
+    ]}
 ]
-}]
 
 
 
 
 const Projects = () => {
   return (
-    <>
-    <a href="/"><div className="text-5xl inline-block m-[2rem] "><IoIosUndo/></div></a>
+    <div >
+    <a href="/"><div className="text-5xl inline-block m-[2rem]"><IoIosUndo/></div></a>
     <div className='text-center max-w-[80%] m-auto  text-projects'>
     <h1 className='font-bold text-3xl md:text-4xl font-rubik '>My Projects</h1>
-    <div className="flex-col">
+    <div className="flex-col ">
       {projectsData.map((project, index) => {
           return (
-              <div key={index} className={`flex flex-col ${index%2==0?"lg:flex-row":"lg:flex-row-reverse"} gap-[3rem] mt-[5rem]`}>
+              <div key={index} className={`flex flex-col ${index%2==0?"lg:flex-row":"lg:flex-row-reverse"} gap-[3rem] mt-[5rem] `}>
             <img src={project.image} alt={project.title} className="w-[500px] h-[250px] m-auto md:w-[600px] md:h-[300px] rounded-2xl " />
             <div className='flex flex-col justify-center'>
 
-            <h3 className="font-bold text-2xl mb-[1rem] font-rubik">{project.title}</h3>
+            <h3 className="font-extrabold  text-2xl mb-[1rem] font-rubik">{project.title}</h3>
             <p className="font-doodle text-xl">{project.desc}</p>
             <div className=" flex flex-row gap-[1rem] p-[1rem]  text-4xl md:text-5xl text-center m-auto ">
               {project.skills.map((skill, index) => (
@@ -90,7 +117,7 @@ const Projects = () => {
     })}
     </div>
     </div>
-    </>
+    </div>
   );
 };
 

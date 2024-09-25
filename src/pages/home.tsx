@@ -55,12 +55,12 @@ const Home=()=>{
             </div>
 
             <div className="">
-                <img src="https://res.cloudinary.com/ddsqjzrow/image/upload/v1727119693/Passport_Photograph_hjqvdb.jpg" alt="your"  className=" rounded-2xl w-[300px] h-[300px] border"/>
-                <div className="mt-[2rem] flex flex-row justify-center gap-[2rem] text-4xl">
+                <img src="https://res.cloudinary.com/ddsqjzrow/image/upload/v1727158721/profile-pic_fttrjp.png" alt="your"  className="border-2 rounded-full   w-[300px] h-[300px] "/>
+                <div className="mt-[2rem] flex flex-row justify-center gap-[2rem] text-4xl  ">
 
-                <a href="https://www.linkedin.com/in/kunal-rawat-56b00322a/" target="blank"><FaLinkedin/></a>
-                <a href="https://github.com/kunalrawat19" target="blank"><FaGithub/></a>
-                <a href="https://x.com/KunalRa07763972" target="blank"><FaXTwitter/></a>
+                <a href="https://www.linkedin.com/in/kunal-rawat-56b00322a/" target="blank" className="transition-transform duration-200 hover:scale-110"><FaLinkedin/></a>
+                <a href="https://github.com/kunalrawat19" target="blank" className="transition-transform duration-200 hover:scale-110"><FaGithub/></a>
+                <a href="https://x.com/KunalRa07763972" target="blank" className="transition-transform duration-200 hover:scale-110"><FaXTwitter/></a>
                 {/* <a href="https://medium.com/@deveshtuli02"><FaMediumM/></a> */}
                 </div>
 

@@ -35,8 +35,8 @@ const Contact=()=>{
     
     
     {socialMediaData.map((socialMedia, index) => (
-        <div key={index} className="w-[150px] h-[150px] md:w-[200px] md:h-[200px] p-[4px] transition-transform duration-300 transform hover:scale-110 border border-transparent hover:border-black rounded-xl flex items-center justify-center">
-    <a href={socialMedia.link} target="blank" className="flex items-center justify-center text-8xl md:text-9xl">
+        <div key={index} className="w-[150px] h-[150px] md:w-[200px] md:h-[200px] m-0 md:p-[4px] transition-transform duration-300 transform hover:scale-110 border border-transparent hover:border-black rounded-xl flex  items-center justify-center">
+    <a href={socialMedia.link} target="blank" className=" text-8xl md:text-9xl">
       {socialMedia.logo}
     </a>
   </div>
